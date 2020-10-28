@@ -193,6 +193,48 @@ def startdate():
     return jsonify(weather_data_list)
 
 
+@app.route('/api/v1.0/Start_End_Date')
+def start_end():
+     # Create a session link from Python to the Database
+    session = Session(engine)
+
+    # Last date
+    last_date = session.query(Measurement.date).\
+    order_by(Measurement.date.desc()).\
+        first()
+    
+    last_date_dt = dt.datetime.strptime(last_date[0],'%Y-%m-%d')
+
+    # Selecting a random start date
+    random_start_date = session.query(Measurement.date).\
+        order_by(func.random()).first()
+    
+    formatted_random_start_date = dt.datetime.strptime(random_start_date[0],'%Y-%m-%d')
+
+    # Using an interval of five years
+    query_date = dt.date(formatted_random_start_date.year + 5, formatted_random_start_date.month, formatted_random_start_date.day)
+
+    # Querying all the Data for a five year interval starting from random start date
+    fy_weather_data = session.query(func.min(Measurement.tobs), func.max(Measurement.tobs), func.avg(Measurement.tobs)).\
+        filter(Measurement.date >= formatted_random_start_date).\
+            filter(Measurement.date <= query_date).all()
+    
+    session.close()
+
+    # Creating a dictionary to present the data
+    five_year_weather_data = []
+
+    for minimum, maximum, average in fy_weather_data:
+        fywdl_dict = {}
+        fywdl_dict['A Random Start Date'] = str(random_start_date[0])
+        fywdl_dict['A Random End Date'] = str(query_date)
+        fywdl_dict['Min Temp'] = minimum
+        fywdl_dict['Max Temp'] = maximum
+        fywdl_dict['Average'] = average
+        
+        five_year_weather_data.append(fywdl_dict)
+        
+        return jsonify(five_year_weather_data)
 
 
 if __name__ == '__main__':

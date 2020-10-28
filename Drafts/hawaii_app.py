@@ -39,7 +39,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return (
-        f'Welcome to the Climate Exploration Module, please choose from the following links'
+        f'Welcome to the Climate Exploration Module, please choose from the following links</br></br>'
         f'Available Routes:<br/>'
         f'/api/v1.0/Tables_columns_in_Data_sets<br/>'
         f'/api/v1.0/precipitation<br/>'

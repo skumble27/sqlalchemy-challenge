@@ -14,7 +14,7 @@ from sqlalchemy import create_engine, func, inspect, select
 #################################################
 # Database Setup
 #################################################
-engine = create_engine('sqlite:///../Resources/hawaii.sqlite')
+engine = create_engine('sqlite:///Resources/hawaii.sqlite')
 
 # Relfecting an existing database into a new model
 Base = automap_base()

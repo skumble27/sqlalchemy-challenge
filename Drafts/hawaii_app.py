@@ -214,6 +214,8 @@ def start_end():
     # Using an interval of five years
     query_date = dt.date(formatted_random_start_date.year + 5, formatted_random_start_date.month, formatted_random_start_date.day)
 
+    # This may not be required.
+            
     # Querying all the Data for a five year interval starting from random start date
     fy_weather_data = session.query(func.min(Measurement.tobs), func.max(Measurement.tobs), func.avg(Measurement.tobs)).\
         filter(Measurement.date >= formatted_random_start_date).\
@@ -234,7 +236,7 @@ def start_end():
         
         five_year_weather_data.append(fywdl_dict)
         
-        return jsonify(five_year_weather_data)
+        return jsonify(five_year_weather_data) 
 
 
 if __name__ == '__main__':

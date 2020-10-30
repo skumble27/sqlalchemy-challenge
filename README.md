@@ -10,3 +10,4 @@ A good vacation is more or less predicated on the weather events that will occur
 
 ## Exploratory Data Analysis
 
+![Precipitation Analysis](https://raw.githubusercontent.com/skumble27/sqlalchemy-challenge/main/Images/precipitation.png)

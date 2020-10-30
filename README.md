@@ -24,5 +24,15 @@ Within the Dataset, there were 9 stations involved in recording climate events. 
 2. Highest recorded temperature was 85 °F
 3. A temperature average of 71.66 °F
 
+A further observation of the temperature frequencies at this station were noted and plotted below:
+
+![Temp Obs](https://raw.githubusercontent.com/skumble27/sqlalchemy-challenge/main/Images/temperature_at_USC00519523.png)
+
+
+
+## Further Analyses on Temperatures (Bonus)
+
+
+
 
 

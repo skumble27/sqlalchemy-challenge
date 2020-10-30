@@ -10,4 +10,19 @@ A good vacation is more or less predicated on the weather events that will occur
 
 ## Exploratory Data Analysis
 
+#### Precipitation rates from 2016 to 2017
+
 ![Precipitation Analysis](https://raw.githubusercontent.com/skumble27/sqlalchemy-challenge/main/Images/precipitation.png)
+
+Based on the previous twelve months of Data from 2016 until 2017, there overall precipitation appears to be quite evenly distributed throughout the year without any indications for specific months or season in which rainfall is the greatest. 
+
+#### Temperature Observations
+
+Within the Dataset, there were 9 stations involved in recording climate events. Base on the analyses, the station with the most activity in data aquisition was **Station USC00519281** with a total observation count of ***<u>2772</u>***.  Within this dataset, the following observations were noted, namely:
+
+1. Lowest recorded temperature was 54.0 °F
+2. Highest recorded temperature was 85 °F
+3. A temperature average of 71.66 °F
+
+
+

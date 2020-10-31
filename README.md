@@ -32,6 +32,24 @@ A further observation of the temperature frequencies at this station were noted 
 
 ## Further Analyses on Temperatures (Bonus)
 
+### Temperature Analysis I
+
+A comparison was undertaken to determine if there were significant differences in the average temperature within the month of June as compared to December, which in turn, can provide opportunities to plan the vacation accordingly. From the time of data recording till the last year of 2017, the temperature observations for the entire month of June and December, for all years, were collated and analysed using the unpaired t-test. 
+
+The Mean average temperature for June from 2010 to 2017 was **74.94 °F** whilst the mean temperature average for December, from 2010 to 2017, was **71.04 °F**. Taking these into consideration, the unpaired t-test was applied as the purpose was to examine the temperatures for two different events, namely, the time period. With a P-value significantly less than the designated alpha value of 0.05, we can deduce that there is statistically significant differences between the mean temperatures in June compared to December.
+
+### Temperature Analysis II
+
+Based on the previous years data for the planned vacation in Hawaii, the temperature averages have been calculated and plotted as a bar graph, as shown below:
+
+![Trip Temp Average](https://raw.githubusercontent.com/skumble27/sqlalchemy-challenge/main/Images/Trip_average_temp.png)
+
+In anticipation of the trip being undertaken, the normal temperature seen everyday in the previous year from the 1st of July to the 31st has been analysed and plotted below. This graph in turn, can provide an idea of what kind of weather to expect during the trip in 2017.
+
+![Temp Daily Normal](https://raw.githubusercontent.com/skumble27/sqlalchemy-challenge/main/Images/daily_normals.png)
+
+
+
 
 
 

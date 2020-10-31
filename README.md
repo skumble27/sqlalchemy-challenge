@@ -30,6 +30,18 @@ A further observation of the temperature frequencies at this station were noted 
 
 
 
+# Climate App 
+
+Utilising the flask module API module, the queries obtained through SQL alchemy can also be viewed on the flask server. The following queries can be viewed, namely, 
+
+1. Precipitation rates
+2. Weather stations within the dataset
+3. Temperature observations for the most active weather station
+4. The minimum, average and maximum temperature for a randomly selected date as the starting date, which analyses all the data till the last recorded datum. 
+5. As above, the analyses is done for a randomly selected date with a five year period.
+
+
+
 ## Further Analyses on Temperatures (Bonus)
 
 ### Temperature Analysis I
